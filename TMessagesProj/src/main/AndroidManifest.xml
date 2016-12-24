@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.telegram.hame.mohamad"
+    package="com.parsitelg.telegram"
     android:installLocation="auto">
 
     <supports-screens
@@ -126,7 +126,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.com.telegram.hame.mohamad.android.profile" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.parsitelg.telegram.android.profile" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -208,14 +208,14 @@
             android:name=".AutoMessageHeardReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.telegram.hame.mohamad.ACTION_MESSAGE_HEARD" />
+                <action android:name="com.parsitelg.telegram.ACTION_MESSAGE_HEARD" />
             </intent-filter>
         </receiver>
         <receiver
             android:name=".AutoMessageReplyReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.telegram.hame.mohamad.ACTION_MESSAGE_REPLY" />
+                <action android:name="com.parsitelg.telegram.ACTION_MESSAGE_REPLY" />
             </intent-filter>
         </receiver>
         <receiver android:name=".CallReceiver">
